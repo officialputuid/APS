@@ -1,4 +1,4 @@
-name: build-apk
+name: build-mtk-apk
 
 on: [workflow_dispatch]
 
@@ -8,7 +8,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./
+        working-directory: ./MediaTek
 
     steps:
     - name: Checkout Repo
@@ -38,8 +38,8 @@ jobs:
       uses: marvinpinto/action-automatic-releases@latest
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        automatic_release_tag: "debug"
+        automatic_release_tag: "ex-MediaTek"
         prerelease: false
-        title: APS-debug
+        title: APS-MediaTek
         files: |
           app/build/outputs/apk/debug/app-debug.apk

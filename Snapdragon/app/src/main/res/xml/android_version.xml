@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:key="os_firmware_version"
+        android:title="@string/android_version"
+        android:summary="@string/android_version_number"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        android:key="security_patch_level"
+        android:title="@string/security_patch_level"
+        android:summary="1 November 2023"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        android:key="base_band"
+        android:selectable="false"
+        android:summary="@string/baseband_version"
+        android:title="@string/os_baseband_version"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        android:key="kernel_version"
+        android:title="@string/os_kernel_version"
+        android:summary="@string/kernel_version"
+        android:selectable="false"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        android:key="os_build_number"
+        android:title="@string/os_build_number"
+        android:summary="@string/build_number"
+        android:selectable="false"
+        app:iconSpaceReserved="false" />
+
+</PreferenceScreen>

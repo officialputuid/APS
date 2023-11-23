@@ -1,0 +1,45 @@
+name: build-sd-apk
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./Snapdragon
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Setup JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'zulu'
+        java-version: 17
+        cache: 'gradle'
+
+    - name: Change Wrapper Perms
+      run: chmod +x ./gradlew
+
+    - name: Build Debug Apk
+      shell: bash
+      run: ./gradlew assembleDebug
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-debug.apk
+        path: app/build/outputs/apk/debug/app-debug.apk
+
+    - name: Github Release
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        automatic_release_tag: "ex-Snapdragon"
+        prerelease: false
+        title: APS-Snapdragon
+        files: |
+          app/build/outputs/apk/debug/app-debug.apk

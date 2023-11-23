@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.TitleLarge" parent="">
+        <item name="fontFamily">@font/gsans</item>
+        <item name="android:fontFamily">@font/gsans</item>
+    </style>
+</resources>

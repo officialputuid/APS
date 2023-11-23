@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.AndroidVersionSpoofer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:fontFamily">@font/gsans</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.App.TitleLarge</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.App.TitleLarge</item>
+    </style>
+
+    <style name="Theme.AndroidVersionSpoofer" parent="Base.Theme.AndroidVersionSpoofer" />
+
+</resources>

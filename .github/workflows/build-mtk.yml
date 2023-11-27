@@ -40,6 +40,6 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         automatic_release_tag: "ex-MediaTek"
         prerelease: false
-        title: APS-MediaTek
+        title: AVS-MediaTek
         files: |
           MediaTek/app/build/outputs/apk/debug/app-debug.apk

@@ -40,6 +40,6 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         automatic_release_tag: "ex-Snapdragon"
         prerelease: false
-        title: APS-Snapdragon
+        title: AVS-Snapdragon
         files: |
           Snapdragon/app/build/outputs/apk/debug/app-debug.apk

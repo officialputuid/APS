@@ -11,7 +11,7 @@
     <ListPreference
         android:key="security_patch_level"
         android:title="@string/security_patch_level"
-        android:summary="1 November 2023"
+        android:summary="@string/security_patch_level_summary"
         app:iconSpaceReserved="false" />
 
     <ListPreference

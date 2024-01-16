@@ -4,13 +4,14 @@
     <string name="os_build_number">Build number</string>
     <string name="android_version_number">14</string>
     <string name="security_patch_level">Android security update</string>
+    <string name="security_patch_level_summary">January 5, 2024</string>
     <string name="os_kernel_version">Kernel version</string>
-    <string name="kernel_version">6.6.2-psionic-g0573481372c1\n#1 Wed Nov 27 01:23:45 UTC 2023"</string>
+    <string name="kernel_version">"6.6.12-psionic:[RM6785][KernelSU]-g0573481372c1\n#1 Tue Jan 16 01:23:45 UTC 2024"</string>
     <string name="os_baseband_version">Baseband version</string>
     <string name="baseband_version">MPSS.DE.2.0-Jul 14 2023-11:05.32</string>
     <string name="device_information">Android version</string>
     <string name="android_version">Android version</string>
-    <string name="build_number">"UP1A.231105.003 \PixelExperience_marble-14.0-20231127-1234"</string>
+    <string name="build_number">"UQ1A.240105.004 \PixelExperience_marble-14.0-20240116-1234"</string>
     <string name="about_phone_spoof">About Phone Spoof</string>
     <string name="search">Search</string>
 </resources>
